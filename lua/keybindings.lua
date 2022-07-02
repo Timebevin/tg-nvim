@@ -8,7 +8,6 @@ local opt = { noremap = true, silent = true }
 map('n', 'sv', ':vsp<CR>', opt)
 map('n', 'sh', ':sp<CR>', opt)
 -- 关闭当前
-map('n', '<leader>f', 'easymotion-bd-f', opt)
 map('n', 'sc', '<C-w>c', opt)
 -- 关闭其他
 map('n', 'so', '<C-w>o', opt)
@@ -30,7 +29,7 @@ map('n', '<C-Up>', ':resize -2<CR>', opt)
 -- 等比例
 map('n', 's=', '<C-w>=', opt)
 -- Terminal相关
-map('n', '<leader>st', ':sp | terminal<CR>', opt)
+map('n', '<leader>st', ':sp | terminal<CR>:resize -15<CR>', opt)
 map('n', '<leader>vt', ':vsp | terminal<CR>', opt)
 map('n', '<leader>t', ':terminal<CR>', opt)
 map('t', '<Esc>', '<C-\\><C-n>', opt)
@@ -68,6 +67,7 @@ local pluginKeys = {}
 -- nvim-tree
 -- alt + m 键打开关闭tree
 map('n', '<A-m>', ':NvimTreeToggle<CR>', opt)
+map('n', '<A-z>', ':NvimTreeRefresh<CR>', opt)
 -- 列表快捷键
 pluginKeys.nvimTreeList = {
     -- 打开文件或文件夹

@@ -1,5 +1,5 @@
 vim.g.dashboard_default_executive = 'telescope'
-vim.g.dashboard_custom_footer = { '身家千万不是梦，有空梦里梦一梦' }
+vim.g.dashboard_custom_footer = { '' }
 
 vim.g.dashboard_custom_section = {
     a = { description = { '  Projects              ' }, command = 'Telescope projects' },
@@ -35,7 +35,6 @@ vim.g.dashboard_custom_header = {
     [[  ███████║██║  ██║██║  ██║╚██████╔╝   ██║   ╚██████╔╝██║ ╚████║╚██████╔╝  ]],
     [[  ╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝    ╚═╝    ╚═════╝ ╚═╝  ╚═══╝ ╚═════╝   ]],
     [[                                                                          ]],
-    [[                                菜是原罪                                  ]],
 }
 
 -- vim.g.dashboard_custom_section = {
